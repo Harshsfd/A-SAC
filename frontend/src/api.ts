@@ -56,10 +56,5 @@ export async function getBlogById(id: string) {
   return apiRequest(`/blogs/${id}`);
 }
 
-// Submit newsletter subscription
-export async function subscribeNewsletter(email: string) {
-  return apiRequest("/newsletter", {
-    method: "POST",
-    body: JSON.stringify({ email }),
   });
 }
